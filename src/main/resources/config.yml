@@ -4,14 +4,11 @@
 # |_|_\___\__,_|\___|_| \__,_|_|  \__(_)___/_| \__, |
 #                                              |___/
 #
-# TODO SpigotMC plugin
+# RedCraftMongoStats config
+sync-ticks-interval: 600 # Default sync every 30 secs
+debug-sync: false # Prints debug to console (verbose), not recommended on production
 
 # Database related settings
-database-uri: "jdbc:mysql://localhost:3306/redcraft_plugin_template?useSSL=false&autoReconnect=true"
-database-username: "root"
-database-password: "password"
-
-# Used for caching
-redis-enabled: false
-redis-uri: "redis://localhost:6379/0"
-redis-key-prefix: "RCP"
+mongo-uri: "mongodb://username:password@localhost:27017/?retryWrites=true"
+mongo-database: "redcraft_stats"
+mongo-collection: "test"
