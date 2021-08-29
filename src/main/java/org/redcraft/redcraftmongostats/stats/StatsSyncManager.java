@@ -44,6 +44,8 @@ public class StatsSyncManager {
         Document advancements = Document.parse(rawAdvancements);
 
         document.put("_id", player.getUniqueId().toString());
+        document.put("name", player.getName());
+        document.put("display_name", player.getDisplayName());
         document.put("stats", stats);
         document.put("advancements", advancements);
         this.savePlayerStats(document);
