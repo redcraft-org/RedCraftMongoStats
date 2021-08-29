@@ -1,0 +1,17 @@
+#  ___        _  ___           __ _
+# | _ \___ __| |/ __|_ _ __ _ / _| |_   ___ _ _ __ _
+# |   / -_) _` | (__| '_/ _` |  _|  _|_/ _ \ '_/ _` |
+# |_|_\___\__,_|\___|_| \__,_|_|  \__(_)___/_| \__, |
+#                                              |___/
+#
+# TODO SpigotMC plugin
+
+# Database related settings
+database-uri: "jdbc:mysql://localhost:3306/redcraft_plugin_template?useSSL=false&autoReconnect=true"
+database-username: "root"
+database-password: "password"
+
+# Used for caching
+redis-enabled: false
+redis-uri: "redis://localhost:6379/0"
+redis-key-prefix: "RCP"

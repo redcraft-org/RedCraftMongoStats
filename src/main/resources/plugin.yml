@@ -1,0 +1,12 @@
+name: RedCraftPluginTemplate
+main: org.redcraft.redcraftplugintemplate.RedCraftPluginTemplate
+version: 0.0.1-SNAPSHOT
+api-version: 1.17
+author: RedCraft
+authors: [TestUser]
+website: redcraft.org
+commands:
+  test:
+    description: Test command
+    usage: /test
+    permission: redcraftplugintemplate.test
