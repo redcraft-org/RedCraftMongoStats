@@ -1,10 +1,22 @@
 
-# RedCraftPluginTemplate
+# RedCraftMongoStats
 
-A SpigotMC plugin boilerplate plugin
+A SpigotMC plugin to synchronize vanilla player stats with a MongoDB server.
 
-## How to use
+It's been built to sync stats from the original json advancement and stats files to a MongoDB server, using the player UUID as the `_id` key:
 
-Create a new project from this template, search for "PluginTemplate" and replace it with the name of your plugin, make sure to also rename the files.
+<img width="1701" alt="Record example" src="https://user-images.githubusercontent.com/2182934/131265080-687fd1d3-f3a8-405b-b0ed-41119f963955.png">
 
-There are some models example for DB/caching, also search in the codebase for "Change" and "Add", there will be comments of what needs to be changed.
+## Downloads
+
+You can download the latest version from the [release page](https://github.com/redcraft-org/RedCraftMongoStats/releases).
+
+## How to compile
+
+Make sure you have a JDK for Java 16 and Maven, and run `maven -B package` to compile it. You'll find the `.jar` in the `target` directory.
+
+## Contributing
+
+You are free to suggest changes by opening an issue ticket.
+
+You can also open PRs, but remember to bump the version in `pom.xml` and `plugin.yml` before opening a pull request.

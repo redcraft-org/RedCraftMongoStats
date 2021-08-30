@@ -1,12 +1,12 @@
-name: RedCraftPluginTemplate
-main: org.redcraft.redcraftplugintemplate.RedCraftPluginTemplate
+name: RedCraftMongoStats
+main: org.redcraft.redcraftmongostats.RedCraftMongoStats
 version: 0.0.1-SNAPSHOT
 api-version: 1.17
 author: RedCraft
-authors: [TestUser]
+authors: [lululombard]
 website: redcraft.org
 commands:
-  test:
-    description: Test command
-    usage: /test
-    permission: redcraftplugintemplate.test
+  syncstats:
+    description: Sync stats to MongoDB
+    usage: /syncstats
+    permission: redcraftmongostats.syncstats
